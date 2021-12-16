@@ -7,7 +7,16 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* only div  */
+div {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* Removed the classes throughout and left as id tags */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,18 +54,9 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
-p {
+/* Combined figcaption and p since both required the same font-size to avoid more redundances */
+figcaption, p {
     font-size: 16px;
-}
-
-div {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .float-left {
@@ -74,7 +74,25 @@ main {
     display: inline-block;
     margin-left: 20px;
 }
+/* grouped figure elements together and removed extra lines since not all required to be defined since it pertained to a group */
+figure {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* condensed lines 137-189 */
+figure img {
+    max-height: 200px;
+}
 
+figure h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Grouped section elements together and removed extra lines since not all required to be defined since it pertained to a group */
 section {
     margin-right: 20px;
     padding: 20px;
@@ -85,7 +103,7 @@ section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* Since these are grouped I was able to condense lines 89-135 */
 aside {
     margin-bottom: 32px;
     color: #ffffff;
@@ -101,25 +119,7 @@ aside img {
     margin: 10px auto;
     max-width: 150px;
 }
-
-article {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-article img {
-    max-height: 200px;
-}
-
-article h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Renamed to footer */
 footer {
     padding: 30px;
     clear: both;
